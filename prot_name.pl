@@ -1,9 +1,9 @@
 #!usr/bin/perl -w
 use strict;
 
-my $file_blast = "file_location\\prot_individual_code.orient.stripped.trim.unique.pick.fasta";
+my $file_blast = "file_location\\prot.fasta";
 open (FIN,$file_blast)||die"Where's the blast file ?";
-open (FOUT,">>file_location\\prot_individual_code.orient.stripped.trim.unique.pick.fasta.accnos");
+open (FOUT,">>file_location\\prot.fasta.accnos");
 
 my %seq;
 my $key;
